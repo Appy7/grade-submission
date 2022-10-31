@@ -1,6 +1,5 @@
 package com.ltp.gradesubmission;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +19,6 @@ import com.ltp.gradesubmission.exception.EntityNotFoundException;
 import com.ltp.gradesubmission.exception.ErrorResponse;
 import com.ltp.gradesubmission.exception.GradeNotFoundException;
 import com.ltp.gradesubmission.exception.StudentNotEnrolledException;
-
 
 @ControllerAdvice
 public class ApplicationExceptionHandler extends ResponseEntityExceptionHandler {
