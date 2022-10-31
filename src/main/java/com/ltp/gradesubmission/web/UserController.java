@@ -22,13 +22,10 @@ import lombok.AllArgsConstructor;
 @RequestMapping("/user")
 public class UserController {
 
-
-
     UserService userService;
 
 	@GetMapping("/{id}")
 	public ResponseEntity<String> findById(@PathVariable Long id) {
-
 		return new ResponseEntity<>(userService.getUser(id).getUsername(),HttpStatus.OK);
 	}
 

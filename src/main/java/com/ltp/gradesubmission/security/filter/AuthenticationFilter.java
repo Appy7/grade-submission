@@ -21,16 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 
-
-
-
 @AllArgsConstructor
-
 public class AuthenticationFilter  extends UsernamePasswordAuthenticationFilter {
 
     private CustomAuthenticationManager authenticationManager;
-
-
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
@@ -44,8 +38,6 @@ public class AuthenticationFilter  extends UsernamePasswordAuthenticationFilter 
         } catch (IOException e) {
             throw new RuntimeException();
         }
-
-
     }
 
     @Override
